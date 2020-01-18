@@ -37,7 +37,7 @@ async function updateGist(stats) {
       String(percent.toFixed(1)).padStart(5) + "%"
     ];
 
-    lines.push(line.join(" "));
+    lines.push(line.join("  "));
   }
 
   if (lines.length == 0) return;
