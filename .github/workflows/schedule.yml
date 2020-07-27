@@ -15,7 +15,7 @@ jobs:
       - name: Install
         run: npm ci
       - name: Update gist
-        run: node ./index.js
+        run: node ./index.js  --unhandled-rejections=strict
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: 7854aac61f991ef4e7ae7b8440e4fdc6
