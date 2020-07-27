@@ -1,6 +1,6 @@
 {
   "name": "waka-box",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "📊 Update a gist to contain your weekly WakaTime stats",
   "author": "Matan Kushner <hello@matchai.me>",
   "license": "ISC",
@@ -8,20 +8,12 @@
     "build": "ncc build index.js --out dist --minify"
   },
   "dependencies": {
-    "@octokit/rest": "^16.36.0",
-    "axios": "^0.19.2",
+    "@octokit/rest": "16.36.0",
+    "axios": "0.19.2",
     "dotenv": "8.2.0",
     "wakatime-client": "2.0.3"
   },
   "devDependencies": {
-    "@zeit/ncc": "0.20.5",
-    "husky": "3.1.0",
-    "prettier": "1.19.1",
-    "pretty-quick": "2.0.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
+    "@zeit/ncc": "0.20.5"
   }
 }
