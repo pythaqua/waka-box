@@ -24,7 +24,7 @@ async function updateGist(stats) {
   } catch (error) {
     console.error(`Unable to get gist\n${error}`);
   }
-
+  console.log("gist>>>>>>>>>", gist);
   const lines = [];
   for (let i = 0; i < Math.min(stats.data.languages.length, 6); i++) {
     const data = stats.data.languages[i];
@@ -39,7 +39,7 @@ async function updateGist(stats) {
 
     lines.push(line.join(" "));
   }
-
+  console.log("lines>>>>>>>>>", lines);
   if (lines.length == 0) return;
 
   try {
@@ -54,6 +54,7 @@ async function updateGist(stats) {
         }
       }
     });
+    console.log("filename>>>>>>>>>", filename);
   } catch (error) {
     console.error(`Unable to update gist\n${error}`);
   }
