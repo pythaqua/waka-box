@@ -18,5 +18,5 @@ jobs:
         run: node ./index.js  --unhandled-rejections=strict
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 7854aac61f991ef4e7ae7b8440e4fdc6
+          GIST_ID: d1d3774cf9a83ca4739624a0aa1524ff
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
